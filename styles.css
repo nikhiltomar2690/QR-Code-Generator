@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    color: #EEEEEE;
+}
+body{
+    background-color: black;
+}
+.wrapper{
+    
+    display: flex; 
+     justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    height: 400px;
+    width: 400px;
+   margin: 140px;
+   transition: height 0.2s ease;
+}
+.wrapper.active{
+    height: 400px;
+}
+.qr-code{
+    height: 300px;
+    width: 300px;
+display: flex;
+justify-content: center;
+}
+
+.wrapper .qr-code{
+    opacity: 0;
+    pointer-events: none;
+}
+button{
+    color: #393E46;
+    background: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+input{
+    color: black;
+}
+.lottie{
+    
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+.overall{
+     align-self: center;
+     display: flex;
+     /* flex-direction: row; */
+     justify-content: center;
+     align-items: center;
+     
+     
+}
+.footer{
+    width: 100%;
+    padding-right: 20px;
+    text-align: right;
+    margin-right: 20px;
+font-weight: bold;
+color: black;
+background-color: white;
+}
+.wrapper.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.25s ease;
+}
